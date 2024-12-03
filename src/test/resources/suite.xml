@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Test Suite" parallel="none">
+    <!-- <parameter name="browser" value="chrome"/>-->
+    <parameter name="url" value="https://www.saucedemo.com/"/>
+
+    <!--
+    <test name="Purchase Flow Tests">
+        <classes>
+            <class name="tests.PurchaseTest"/>
+        </classes>
+    </test>
+
+    <test name="Remove Shopping Cart Tests">
+        <classes>
+            <class name="tests.RemoveTest"/>
+        </classes>
+    </test>-->
+
+    <test name="Logout Tests">
+        <parameter name="user" value="standard_user" />
+        <parameter name="password" value="secret_sauce" />
+        <classes>
+            <class name="tests.LogOutTest"/>
+        </classes>
+    </test>
+</suite>
